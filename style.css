@@ -1,0 +1,471 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f5;
+    color: #183653;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.topo {
+    height: 95px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    background: #f5a623;
+    color: white;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+}
+
+.logo strong {
+    font-size: 20px;
+    color: #163b67;
+}
+
+
+/* MENU */
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #183653;
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4caf50;
+}
+
+
+/* =========================
+   CAPA
+========================= */
+
+.hero {
+    height: 450px;
+
+    background-image: url("imagens/capa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* CAMADA SUAVE SOBRE A IMAGEM */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* TEXTO DA CAPA */
+
+.hero-conteudo {
+    position: relative;
+
+    z-index: 2;
+
+    width: 430px;
+
+    margin-left: 27%;
+
+    padding-top: 55px;
+
+    color: #17385c;
+}
+
+.hero-conteudo h2 {
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+    color: #0756a0;
+}
+
+.hero-conteudo p {
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.hero-conteudo strong {
+    font-weight: bold;
+}
+
+
+/* =========================
+   ÁREA DE ADOÇÃO
+========================= */
+
+.adocao {
+    background: #ffffff;
+
+    text-align: center;
+
+    padding: 45px 20px 55px;
+
+    position: relative;
+}
+
+
+/* TÍTULO */
+
+.adocao h1 {
+    font-size: 48px;
+
+    color: #2e6935;
+
+    margin-bottom: 5px;
+
+    font-weight: 800;
+}
+
+.subtitulo {
+    color: #1261a0;
+
+    font-size: 22px;
+
+    margin-bottom: 22px;
+}
+
+
+/* FRASE */
+
+.frase {
+    color: #40584a;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.animais {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.card {
+    background: white;
+
+    width: 260px;
+
+    padding: 12px;
+
+    border-radius: 15px;
+
+    text-align: left;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* FOTOS */
+
+.card img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+.card h2 {
+    color: #2e6953;
+
+    font-size: 22px;
+
+    margin: 10px 5px;
+}
+
+.card p {
+    line-height: 1.8;
+
+    margin: 0 5px 12px;
+
+    color: #263b2b;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.btn-interesse {
+    width: 100%;
+
+    background: #f28c00;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-interesse:hover {
+    background: #d87500;
+
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #2e6935;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    display: inline-block;
+
+    margin: 5px 15px;
+}
+
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .topo {
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-conteudo {
+        width: 80%;
+
+        margin: auto;
+
+        padding-top: 40px;
+
+        text-align: center;
+    }
+
+    .hero-conteudo p {
+        font-size: 16px;
+    }
+
+    .adocao h1 {
+        font-size: 36px;
+    }
+
+    .subtitulo {
+        font-size: 19px;
+    }
+
+    .card {
+        width: 90%;
+
+        max-width: 320px;
+    }
+
+    footer p {
+        display: block;
+
+        margin: 10px;
+    }
+}
+
+
+    /* =========================
+   FOTO AMPLIADA
+========================= */
+
+.visualizador {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 9999;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+.visualizador img {
+    display: block;
+
+    max-width: 90%;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+#fechar {
+    position: absolute;
+
+    top: 20px;
+    right: 35px;
+
+    color: white;
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 10000;
+}
