@@ -358,13 +358,8 @@ footer p {
 
     .topo {
         height: auto;
-        min-height: 95px;
-
-        padding: 15px 20px;
-
+        padding: 15px;
         flex-direction: column;
-        justify-content: center;
-
         gap: 18px;
     }
 
@@ -390,41 +385,32 @@ footer p {
     /* MENU */
 
     nav {
-        width: 100%;
-
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
+        gap: 15px;
         flex-wrap: wrap;
-
-        gap: 12px 20px;
+        justify-content: center;
     }
 
     nav a {
         font-size: 14px;
-        white-space: nowrap;
     }
 
 
     /* CAPA */
 
     .hero {
+        height: 500px;
         
         background-image: url("imagens/capa-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-}
+
 
     .hero-conteudo {
-        width: calc(100% - 40px);
-
-        max-width: 430px;
-
-        margin: 0 auto;
-
+        width: 80%;
+         margin: 0 auto;
         padding-top: 40px;
-
         text-align: center;
     }
 
@@ -434,7 +420,6 @@ footer p {
 
     .hero-conteudo p {
         font-size: 16px;
-        line-height: 1.5;
     }
 
 
@@ -445,17 +430,11 @@ footer p {
     }
 
     .adocao h1 {
-        font-size: clamp(30px, 9vw, 42px);
-
-        line-height: 1.1;
+        font-size: 36px;
     }
 
     .subtitulo {
         font-size: 19px;
-
-        line-height: 1.4;
-
-        margin-bottom: 18px;
     }
 
     .frase {
@@ -484,11 +463,9 @@ footer p {
     }
 
     .card {
-        width: 100%;
+        width: 90%;
 
-        max-width: 340px;
-
-        padding: 12px;
+        max-width: 320px;
     }
 
 
@@ -521,9 +498,9 @@ footer p {
     footer p {
         display: block;
 
-        margin: 10px 0;
+        margin: 10px;
     }
-
+}
 
     /* FOTO AMPLIADA */
 
@@ -542,7 +519,6 @@ footer p {
 
         font-size: 42px;
     }
-}
 
 
 /* =========================
@@ -591,7 +567,7 @@ footer p {
         background-size: cover;
         background-repeat: no-repeat;
     ^} 
-}
+    }
 
     .adocao {
         padding-left: 12px;
