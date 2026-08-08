@@ -1,59 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto São Francisco - Adoção</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 1rem;
-    }
-    main {
-      padding: 1rem;
-    }
-    .card {
-      background: white;
-      margin: 1rem auto;
-      padding: 1rem;
-      border-radius: 8px;
-      max-width: 400px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto São Francisco de Assis</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-  <header>
-    <h1>Projeto São Francisco</h1>
-    <p>Adoção responsável</p>
-  </header>
-  <main>
-    <div class="card">
-      <h2>Bem-vindo!</h2>
-      <p>Conheça nossos animais disponíveis para adoção.</p>
-      <img src="cachorro.jpg" alt="Cachorro para adoção">
+
+
+<!-- CABEÇALHO -->
+<header class="topo">
+
+    <div class="logo">
+
+        <h2>🐾</h2>
+
+        <div>
+            <span>Projeto</span>
+            <strong>São Francisco<br>de Assis</strong>
+        </div>
+
     </div>
-  </main>
-  <footer>
-    <p>Entre em contato: projeto@adocao.com</p>
-  </footer>
+
+
+    <nav>
+
+        <a href="#">Início</a>
+
+        <a href="#">Sobre o Projeto</a>
+
+        <a href="#">Adoção</a>
+
+        <a href="#">Como Ajudar</a>
+
+        <a href="#">Contato</a>
+
+    </nav>
+
+</header>
+
+
+<!-- CAPA -->
+<section class="hero">
+
+    <div class="hero-conteudo">
+    </div>
+
+</section>
+
+
+<!-- ÁREA DE ADOÇÃO -->
+<section class="adocao">
+
+    <h1>ADOTE UM AMIGO</h1>
+
+    <p class="subtitulo">
+        Animais esperando por um novo lar
+    </p>
+
+    <p class="frase">
+        🐾 Juntos pela vida dos peludinhos - apoie nosso Projeto
+        e ajude a transformar a vida dos animais de rua. 🐾
+    </p>
+
+
+    <!-- ANIMAIS -->
+    <div class="animais">
+
+
+        <!-- ANIMAL 1 -->
+        <div class="card">
+
+            <img
+                src="imagens/cachorro1.jpg.jpg"
+                alt="Filhote"
+                class="foto-animal"
+            >
+
+            <h2>Filhote</h2>
+
+            <p>
+                🐾 SABER INFORMAÇÕES<br>
+                📅 SABER INFORMAÇÕES<br>
+                ❤️ SABER INFORMAÇÕES
+            </p>
+
+            <button class="btn-interesse">
+                🐾 Tenho interesse
+            </button>
+
+        </div>
+
+
+        <!-- ANIMAL 2 -->
+        <div class="card">
+
+            <img
+                src="imagens/cachorro2.jpg.jpg"
+                alt="Filhote"
+                class="foto-animal"
+            >
+
+            <h2>Filhote</h2>
+
+            <p>
+                🐾 SABER INFORMAÇÕES<br>
+                📅 SABER INFORMAÇÕES<br>
+                ❤️ SABER INFORMAÇÕES
+            </p>
+
+            <button class="btn-interesse">
+                🐾 Tenho interesse
+            </button>
+
+        </div>
+
+
+        <!-- ANIMAL 3 -->
+        <div class="card">
+
+            <img
+                src="imagens/cachorro3.jpg.jpg"
+                alt="Filhote"
+                class="foto-animal"
+            >
+
+            <h2>Filhote</h2>
+
+            <p>
+                🐾 SABER INFORMAÇÕES<br>
+                📅 SABER INFORMAÇÕES<br>
+                ❤️ SABER INFORMAÇÕES
+            </p>
+
+            <button class="btn-interesse">
+                🐾 Tenho interesse
+            </button>
+
+        </div>
+
+
+        <!-- ANIMAL 4 -->
+        <div class="card">
+
+            <img
+                src="imagens/cachorro4.jpg.jpg"
+                alt="Filhote"
+                class="foto-animal"
+            >
+
+            <h2>Filhote</h2>
+
+            <p>
+                🐾 SABER INFORMAÇÕES<br>
+                📅 SABER INFORMAÇÕES<br>
+                ❤️ SABER INFORMAÇÕES
+            </p>
+
+            <button class="btn-interesse">
+                🐾 Tenho interesse
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RODAPÉ -->
+<footer>
+
+    <h3>🐾 Contato</h3>
+
+    <p>📞 (53) 99959-1605</p>
+
+    <p>📩 gabrielcrdoso33@gmail.com</p>
+
+    <p>📍 Piratini-RS</p>
+
+</footer>
+
+
+<!-- VISUALIZADOR DA FOTO -->
+<div id="visualizador" class="visualizador">
+
+    <span id="fechar">&times;</span>
+
+    <img
+        id="foto-ampliada"
+        src=""
+        alt="Foto ampliada"
+    >
+
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
