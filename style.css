@@ -411,14 +411,10 @@ footer p {
     /* CAPA */
 
     .hero {
-        height: 420px;
         
         background-image: url("imagens/capa-mobile.jpg");
-
-        background-position: center;
-        background-size: 100% cover;
-        background-repeat: no-repeat;
     }
+}
 
     .hero-conteudo {
         width: calc(100% - 40px);
