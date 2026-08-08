@@ -16,7 +16,7 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
-    
+
     font-family: Arial, sans-serif;
     background: #f8f8f5;
     color: #183653;
@@ -413,8 +413,11 @@ footer p {
     .hero {
         height: 420px;
 
-        background-position: center;
-        background-size: cover;
+        background-position: center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        background-color: #f8f8f5;
     }
 
     .hero-conteudo {
