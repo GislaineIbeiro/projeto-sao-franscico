@@ -18,6 +18,7 @@ body {
     overflow-x: hidden;
 
     font-family: Arial, sans-serif;
+
     background: #f8f8f5;
     color: #183653;
 }
@@ -28,14 +29,15 @@ body {
 ========================= */
 
 .topo {
-    height: 95px;
+    min-height: 95px;
+
     background: white;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 7%;
+    padding: 15px 7%;
 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
@@ -44,7 +46,9 @@ body {
 }
 
 
-/* LOGO */
+/* =========================
+   LOGO
+========================= */
 
 .logo {
     display: flex;
@@ -79,16 +83,25 @@ body {
 }
 
 
-/* MENU */
+/* =========================
+   MENU
+========================= */
 
 nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     gap: 35px;
+
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
+
     color: #183653;
+
     font-weight: bold;
     font-size: 16px;
 
@@ -105,64 +118,30 @@ nav a:hover {
 ========================= */
 
 .hero {
-    height: 450px;
+    width: 100%;
 
-    background-image: url("imagens/capa.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #f5f5f5;
 
-    position: relative;
+    overflow: hidden;
 }
 
 
-/* CAMADA SUAVE SOBRE A IMAGEM */
+/* IMAGEM DA CAPA */
 
-.hero::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background: rgba(255, 255, 255, 0.08);
+.hero picture {
+    display: block;
+    width: 100%;
 }
 
+.hero .capa {
+    display: block;
 
-/* TEXTO DA CAPA */
+    width: 100%;
+    height: auto;
 
-.hero-conteudo {
-    position: relative;
+    max-width: 100%;
 
-    z-index: 2;
-
-    width: 430px;
-
-    margin-left: 27%;
-
-    padding-top: 55px;
-
-    color: #17385c;
-}
-
-.hero-conteudo h2 {
-    font-size: 18px;
-
-    margin-bottom: 5px;
-
-    color: #0756a0;
-}
-
-.hero-conteudo p {
-    font-size: 18px;
-
-    line-height: 1.5;
-
-    margin-bottom: 18px;
-}
-
-.hero-conteudo strong {
-    font-weight: bold;
+    object-fit: contain;
 }
 
 
@@ -171,6 +150,8 @@ nav a:hover {
 ========================= */
 
 .adocao {
+    width: 100%;
+
     background: #ffffff;
 
     text-align: center;
@@ -181,7 +162,9 @@ nav a:hover {
 }
 
 
-/* TÍTULO */
+/* =========================
+   TÍTULO
+========================= */
 
 .adocao h1 {
     font-size: 48px;
@@ -201,15 +184,16 @@ nav a:hover {
     margin-bottom: 22px;
 }
 
-
-/* FRASE */
-
 .frase {
     color: #40584a;
 
     font-size: 16px;
 
-    margin-bottom: 25px;
+    line-height: 1.6;
+
+    max-width: 900px;
+
+    margin: 0 auto 35px;
 }
 
 
@@ -218,23 +202,23 @@ nav a:hover {
 ========================= */
 
 .animais {
-    display: flex;
+    width: 100%;
+    max-width: 1150px;
 
-    justify-content: center;
+    margin: 0 auto;
 
-    gap: 35px;
+    display: grid;
 
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
 
-    max-width: 1100px;
-
-    margin: auto;
+    gap: 25px;
 }
+
 
 .card {
     background: white;
 
-    width: 260px;
+    width: 100%;
 
     padding: 12px;
 
@@ -256,14 +240,16 @@ nav a:hover {
 }
 
 
-/* FOTOS */
+/* =========================
+   FOTOS DOS ANIMAIS
+========================= */
 
 .card img {
     width: 100%;
 
-    height: 180px;
+    height: 220px;
 
-    object-fit: contain;
+    object-fit: cover;
 
     border-radius: 10px;
 
@@ -272,18 +258,23 @@ nav a:hover {
     cursor: pointer;
 }
 
+
+/* =========================
+   INFORMAÇÕES DO CARD
+========================= */
+
 .card h2 {
     color: #2e6953;
 
     font-size: 22px;
 
-    margin: 10px 5px;
+    margin: 12px 5px;
 }
 
 .card p {
     line-height: 1.8;
 
-    margin: 0 5px 12px;
+    margin: 0 5px 15px;
 
     color: #263b2b;
 }
@@ -347,256 +338,7 @@ footer p {
 }
 
 
-
 /* =========================
-   CELULAR E TABLET
-========================= */
-
-@media (max-width: 768px) {
-
-    /* CABEÇALHO */
-
-    .topo {
-        height: auto;
-        padding: 15px;
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    .logo {
-        justify-content: center;
-    }
-
-    .logo h2 {
-        width: 60px;
-        height: 60px;
-        font-size: 28px;
-    }
-
-    .logo span {
-        font-size: 13px;
-    }
-
-    .logo strong {
-        font-size: 19px;
-    }
-
-
-    /* MENU */
-
-    nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-
-    /*==============================
-    CAPA MOBILE
-    MOSTRAR A IMAGEM INTEIRA
-    ==============================*/
-
-    .hero {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-        
-        background-image: none;
-
-        position: relative;
-    }
-
-
-    .capa-mobile {
-        display: block;
-
-        width: 100%;
-        height: auto;
-
-        max-width: 100%;
-
-        object-fit: contain;
-    }
-
-
-    .hero-conteudo {
-        width:90%;
-         margin: 0 auto;
-        padding-top: 25px;
-    }
-
-    .hero-conteudo h2 {
-        font-size: 17px;
-    }
-
-    .hero-conteudo p {
-        font-size: 16px;
-    }
-
-
-    /* ÁREA DE ADOÇÃO */
-
-    .adocao {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .adocao h1 {
-        font-size: 30px;
-    }
-
-    .subtitulo {
-        font-size: 17px;
-    }
-
-    .frase {
-        font-size: 14px;
-    }
-
-
-    /* CARDS */
-
-    .animais {
-        width: 100%;
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 25px;
-
-        padding: 0;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-
-    /* FOTOS */
-
-    .card img {
-
-        height: 200px;
-    }
-
-
-    /* BOTÃO */
-
-    .btn-interesse {
-        font-size: 16px;
-
-        padding: 13px 10px;
-    }
-
-
-    /* RODAPÉ */
-
-    footer {
-        padding: 25px 15px;
-    }
-
-    footer p {
-        display: block;
-
-        margin: 10px;
-    }
-}
-
-    /* FOTO AMPLIADA */
-
-    .visualizador {
-        padding: 15px;
-    }
-
-    .visualizador img {
-        max-width: 95%;
-        max-height: 85vh;
-    }
-
-    #fechar {
-        top: 15px;
-        right: 20px;
-
-        font-size: 42px;
-    }
-
-
-/* =========================
-   CELULARES PEQUENOS
-========================= */
-
-@media (max-width: 480px) {
-
-    .topo {
-        padding: 12px 15px;
-
-        gap: 15px;
-    }
-
-    .logo h2 {
-        width: 52px;
-        height: 52px;
-
-        font-size: 24px;
-    }
-
-    .logo strong {
-        font-size: 17px;
-    }
-
-    .logo span {
-        font-size: 12px;
-    }
-
-
-    nav {
-        gap: 10px 14px;
-    }
-
-    nav a {
-        font-size: 13px;
-    }
-
-    } 
-
-    .adocao {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-
-    .adocao h1 {
-        font-size: 30px;
-    }
-
-    .subtitulo {
-        font-size: 17px;
-    }
-
-    .frase {
-        font-size: 14px;
-    }
-
-
-    .card {
-        max-width: 100%;
-    }
-
-
-    .card img {
-        height: 200px;
-    }
-}
-
-
-    /* =========================
    FOTO AMPLIADA
 ========================= */
 
@@ -652,4 +394,291 @@ footer p {
     cursor: pointer;
 
     z-index: 10000;
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 1000px) {
+
+    .topo {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .animais {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 700px;
+    }
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 768px) {
+
+    /* CABEÇALHO */
+
+    .topo {
+        min-height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo h2 {
+        width: 60px;
+        height: 60px;
+
+        font-size: 28px;
+    }
+
+    .logo span {
+        font-size: 13px;
+    }
+
+    .logo strong {
+        font-size: 19px;
+    }
+
+
+    /* MENU */
+
+    nav {
+        width: 100%;
+
+        gap: 12px 20px;
+
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       CAPA MOBILE
+    ========================= */
+
+    .hero {
+        width: 100%;
+
+        height: auto;
+
+        overflow: hidden;
+
+        background: white;
+    }
+
+    .hero picture {
+        width: 100%;
+    }
+
+    .hero .capa {
+        width: 100%;
+
+        height: auto;
+
+        max-width: 100%;
+
+        display: block;
+
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       ÁREA DE ADOÇÃO
+    ========================= */
+
+    .adocao {
+        padding: 40px 15px 50px;
+    }
+
+    .adocao h1 {
+        font-size: 30px;
+
+        line-height: 1.15;
+    }
+
+    .subtitulo {
+        font-size: 17px;
+
+        line-height: 1.4;
+    }
+
+    .frase {
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .animais {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+
+        max-width: 420px;
+
+        margin: 0 auto;
+    }
+
+
+    /* FOTOS */
+
+    .card img {
+        width: 100%;
+
+        height: 240px;
+
+        object-fit: cover;
+    }
+
+
+    /* BOTÃO */
+
+    .btn-interesse {
+        font-size: 16px;
+
+        padding: 13px 10px;
+    }
+
+
+    /* =========================
+       RODAPÉ
+    ========================= */
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer p {
+        display: block;
+
+        margin: 10px;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 480px) {
+
+    .topo {
+        padding: 12px 15px;
+
+        gap: 15px;
+    }
+
+
+    /* LOGO */
+
+    .logo h2 {
+        width: 52px;
+        height: 52px;
+
+        font-size: 24px;
+    }
+
+    .logo strong {
+        font-size: 17px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+
+
+    /* MENU */
+
+    nav {
+        gap: 10px 14px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* CAPA */
+
+    .hero .capa {
+        width: 100%;
+
+        height: auto;
+    }
+
+
+    /* ADOÇÃO */
+
+    .adocao {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .adocao h1 {
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        font-size: 17px;
+    }
+
+    .frase {
+        font-size: 14px;
+    }
+
+
+    /* CARDS */
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card img {
+        height: 220px;
+    }
 }
