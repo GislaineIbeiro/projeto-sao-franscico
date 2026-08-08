@@ -1,60 +1,110 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
+    // =========================
     // BOTÕES DE INTERESSE
-    let botoes = document.querySelectorAll(".btn-interesse");
+    // =========================
 
-    botoes.forEach(function(botao) {
+    const botoes = document.querySelectorAll(".btn-interesse");
 
-        botao.onclick = function() {
+    botoes.forEach(function (botao) {
 
-            alert("Obrigado pelo interesse! Entre em contato com a ONG.");
+        botao.addEventListener("click", function () {
 
-        };
+            alert(
+                "Obrigado pelo interesse! Entre em contato com a ONG."
+            );
+
+        });
 
     });
 
 
+    // =========================
     // FOTOS DOS ANIMAIS
-    let fotos = document.querySelectorAll(".foto-animal");
+    // =========================
 
-    let visualizador = document.getElementById("visualizador");
+    const fotos = document.querySelectorAll(".foto-animal");
 
-    let fotoAmpliada = document.getElementById("foto-ampliada");
+    const visualizador =
+        document.getElementById("visualizador");
 
-    let fechar = document.getElementById("fechar");
+    const fotoAmpliada =
+        document.getElementById("foto-ampliada");
+
+    const fechar =
+        document.getElementById("fechar");
 
 
-    // CLICAR NA FOTO
-    fotos.forEach(function(foto) {
+    // =========================
+    // ABRIR FOTO
+    // =========================
 
-        foto.onclick = function() {
+    fotos.forEach(function (foto) {
+
+        foto.addEventListener("click", function () {
+
+            if (!visualizador || !fotoAmpliada) {
+                return;
+            }
 
             fotoAmpliada.src = foto.src;
 
+            fotoAmpliada.alt =
+                foto.alt || "Foto ampliada";
+
             visualizador.style.display = "flex";
 
-        };
+        });
 
     });
 
 
+    // =========================
     // FECHAR NO X
-    fechar.onclick = function() {
+    // =========================
 
-        visualizador.style.display = "none";
+    if (fechar) {
 
-    };
+        fechar.addEventListener("click", function () {
+
+            visualizador.style.display = "none";
+
+        });
+
+    }
 
 
-    // FECHAR CLICANDO FORA DA FOTO
-    visualizador.onclick = function(event) {
+    // =========================
+    // FECHAR CLICANDO FORA
+    // =========================
 
-        if (event.target === visualizador) {
+    if (visualizador) {
+
+        visualizador.addEventListener("click", function (event) {
+
+            if (event.target === visualizador) {
+
+                visualizador.style.display = "none";
+
+            }
+
+        });
+
+    }
+
+
+    // =========================
+    // FECHAR COM ESC
+    // =========================
+
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape" && visualizador) {
 
             visualizador.style.display = "none";
 
         }
 
-    };
+    });
 
 });
