@@ -408,10 +408,9 @@ footer p {
 
 
     .hero-conteudo {
-        width: 80%;
+        width:90%;
          margin: 0 auto;
-        padding-top: 40px;
-        text-align: center;
+        padding-top: 25px;
     }
 
     .hero-conteudo h2 {
@@ -426,23 +425,20 @@ footer p {
     /* ÁREA DE ADOÇÃO */
 
     .adocao {
-        padding: 35px 15px 45px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .adocao h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .subtitulo {
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .frase {
-        font-size: 15px;
-
-        line-height: 1.5;
-
-        margin-bottom: 25px;
+        font-size: 14px;
     }
 
 
@@ -463,20 +459,15 @@ footer p {
     }
 
     .card {
-        width: 90%;
-
-        max-width: 320px;
+        width: 100%;
     }
 
 
     /* FOTOS */
 
     .card img {
-        width: 100%;
 
-        height: 220px;
-
-        object-fit: contain;
+        height: 200px;
     }
 
 
@@ -559,14 +550,21 @@ footer p {
 
 
     .hero {
-        height: 420px;
+        width: 100%;
+
+        aspect-ratio: 9 / 16;
+
+        height: auto;
+
+        min-height: 0;
 
         background-image: url("imagens/capa-mobile.jpg");
 
-        background-position: center;
-        background-size: cover;
+        background-position: center center;
+        background-size: contain;
         background-repeat: no-repeat;
-    ^} 
+        background-color: #ffffff;
+    } 
     }
 
     .adocao {
