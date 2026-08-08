@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Projeto São Francisco de Assis</title>
 
@@ -13,198 +16,271 @@
 
 </head>
 
+
 <body>
 
 
-<!-- CABEÇALHO -->
-<header class="topo">
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
 
-    <div class="logo">
+    <header class="topo">
 
-        <h2>🐾</h2>
+        <div class="logo">
 
-        <div>
-            <span>Projeto</span>
-            <strong>São Francisco<br>de Assis</strong>
+            <h2>🐾</h2>
+
+            <div>
+                <span>Projeto</span>
+
+                <strong>
+                    São Francisco<br>
+                    de Assis
+                </strong>
+            </div>
+
         </div>
 
-    </div>
+
+        <nav>
+
+            <a href="#">Início</a>
+
+            <a href="#">Sobre o Projeto</a>
+
+            <a href="#adocao">Adoção</a>
+
+            <a href="#">Como Ajudar</a>
+
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+    </header>
 
 
-    <nav>
 
-        <a href="#">Início</a>
+    <!-- =========================
+         CAPA
+    ========================== -->
 
-        <a href="#">Sobre o Projeto</a>
+    <section class="hero">
 
-        <a href="#">Adoção</a>
+        <picture>
 
-        <a href="#">Como Ajudar</a>
+            <!-- IMAGEM PARA CELULAR -->
 
-        <a href="#">Contato</a>
-
-    </nav>
-
-</header>
-
-
-<!-- CAPA -->
-<section class="hero">
-
-    <div class="hero-conteudo">
-    </div>
-
-</section>
-
-
-<!-- ÁREA DE ADOÇÃO -->
-<section class="adocao">
-
-    <h1>ADOTE UM AMIGO</h1>
-
-    <p class="subtitulo">
-        Animais esperando por um novo lar
-    </p>
-
-    <p class="frase">
-        🐾 Juntos pela vida dos peludinhos - apoie nosso Projeto
-        e ajude a transformar a vida dos animais de rua. 🐾
-    </p>
-
-
-    <!-- ANIMAIS -->
-    <div class="animais">
-
-
-        <!-- ANIMAL 1 -->
-        <div class="card">
-
-            <img
-                src="imagens/cachorro1.jpg.jpg"
-                alt="Filhote"
-                class="foto-animal"
+            <source
+                media="(max-width: 768px)"
+                srcset="imagens/capa-mobile.jpg"
             >
 
-            <h2>Filhote</h2>
 
-            <p>
-                🐾 SABER INFORMAÇÕES<br>
-                📅 SABER INFORMAÇÕES<br>
-                ❤️ SABER INFORMAÇÕES
-            </p>
-
-            <button class="btn-interesse">
-                🐾 Tenho interesse
-            </button>
-
-        </div>
-
-
-        <!-- ANIMAL 2 -->
-        <div class="card">
+            <!-- IMAGEM PARA COMPUTADOR -->
 
             <img
-                src="imagens/cachorro2.jpg.jpg"
-                alt="Filhote"
-                class="foto-animal"
+                src="imagens/capa.jpg"
+                alt="Projeto São Francisco de Assis"
+                class="capa"
             >
 
-            <h2>Filhote</h2>
+        </picture>
 
-            <p>
-                🐾 SABER INFORMAÇÕES<br>
-                📅 SABER INFORMAÇÕES<br>
-                ❤️ SABER INFORMAÇÕES
-            </p>
-
-            <button class="btn-interesse">
-                🐾 Tenho interesse
-            </button>
-
-        </div>
+    </section>
 
 
-        <!-- ANIMAL 3 -->
-        <div class="card">
 
-            <img
-                src="imagens/cachorro3.jpg.jpg"
-                alt="Filhote"
-                class="foto-animal"
-            >
+    <!-- =========================
+         ÁREA DE ADOÇÃO
+    ========================== -->
 
-            <h2>Filhote</h2>
-
-            <p>
-                🐾 SABER INFORMAÇÕES<br>
-                📅 SABER INFORMAÇÕES<br>
-                ❤️ SABER INFORMAÇÕES
-            </p>
-
-            <button class="btn-interesse">
-                🐾 Tenho interesse
-            </button>
-
-        </div>
-
-
-        <!-- ANIMAL 4 -->
-        <div class="card">
-
-            <img
-                src="imagens/cachorro4.jpg.jpg"
-                alt="Filhote"
-                class="foto-animal"
-            >
-
-            <h2>Filhote</h2>
-
-            <p>
-                🐾 SABER INFORMAÇÕES<br>
-                📅 SABER INFORMAÇÕES<br>
-                ❤️ SABER INFORMAÇÕES
-            </p>
-
-            <button class="btn-interesse">
-                🐾 Tenho interesse
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- RODAPÉ -->
-<footer>
-
-    <h3>🐾 Contato</h3>
-
-    <p>📞 (53) 99959-1605</p>
-
-    <p>📩 gabrielcrdoso33@gmail.com</p>
-
-    <p>📍 Piratini-RS</p>
-
-</footer>
-
-
-<!-- VISUALIZADOR DA FOTO -->
-<div id="visualizador" class="visualizador">
-
-    <span id="fechar">&times;</span>
-
-    <img
-        id="foto-ampliada"
-        src=""
-        alt="Foto ampliada"
+    <section
+        class="adocao"
+        id="adocao"
     >
 
-</div>
+        <h1>ADOTE UM AMIGO</h1>
 
 
-<script src="script.js"></script>
+        <p class="subtitulo">
+            Animais esperando por um novo lar
+        </p>
+
+
+        <p class="frase">
+            🐾 Juntos pela vida dos peludinhos - apoie nosso Projeto
+            e ajude a transformar a vida dos animais de rua. 🐾
+        </p>
+
+
+
+        <!-- =========================
+             ANIMAIS
+        ========================== -->
+
+        <div class="animais">
+
+
+            <!-- ANIMAL 1 -->
+
+            <div class="card">
+
+                <img
+                    src="imagens/cachorro1.jpg.jpg"
+                    alt="Filhote"
+                    class="foto-animal"
+                >
+
+                <h2>Filhote</h2>
+
+                <p>
+                    🐾 SABER INFORMAÇÕES<br>
+                    📅 SABER INFORMAÇÕES<br>
+                    ❤️ SABER INFORMAÇÕES
+                </p>
+
+                <button class="btn-interesse">
+                    🐾 Tenho interesse
+                </button>
+
+            </div>
+
+
+
+            <!-- ANIMAL 2 -->
+
+            <div class="card">
+
+                <img
+                    src="imagens/cachorro2.jpg.jpg"
+                    alt="Filhote"
+                    class="foto-animal"
+                >
+
+                <h2>Filhote</h2>
+
+                <p>
+                    🐾 SABER INFORMAÇÕES<br>
+                    📅 SABER INFORMAÇÕES<br>
+                    ❤️ SABER INFORMAÇÕES
+                </p>
+
+                <button class="btn-interesse">
+                    🐾 Tenho interesse
+                </button>
+
+            </div>
+
+
+
+            <!-- ANIMAL 3 -->
+
+            <div class="card">
+
+                <img
+                    src="imagens/cachorro3.jpg.jpg"
+                    alt="Filhote"
+                    class="foto-animal"
+                >
+
+                <h2>Filhote</h2>
+
+                <p>
+                    🐾 SABER INFORMAÇÕES<br>
+                    📅 SABER INFORMAÇÕES<br>
+                    ❤️ SABER INFORMAÇÕES
+                </p>
+
+                <button class="btn-interesse">
+                    🐾 Tenho interesse
+                </button>
+
+            </div>
+
+
+
+            <!-- ANIMAL 4 -->
+
+            <div class="card">
+
+                <img
+                    src="imagens/cachorro4.jpg.jpg"
+                    alt="Filhote"
+                    class="foto-animal"
+                >
+
+                <h2>Filhote</h2>
+
+                <p>
+                    🐾 SABER INFORMAÇÕES<br>
+                    📅 SABER INFORMAÇÕES<br>
+                    ❤️ SABER INFORMAÇÕES
+                </p>
+
+                <button class="btn-interesse">
+                    🐾 Tenho interesse
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RODAPÉ / CONTATO
+    ========================== -->
+
+    <footer id="contato">
+
+        <h3>🐾 Contato</h3>
+
+        <p>
+            📞 (53) 99959-1605
+        </p>
+
+        <p>
+            📩 gabrielcrdoso33@gmail.com
+        </p>
+
+        <p>
+            📍 Piratini-RS
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         VISUALIZADOR DE FOTOS
+    ========================== -->
+
+    <div
+        id="visualizador"
+        class="visualizador"
+    >
+
+        <span id="fechar">&times;</span>
+
+        <img
+            id="foto-ampliada"
+            src=""
+            alt="Foto ampliada"
+        >
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
 
 </body>
 
