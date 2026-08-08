@@ -395,15 +395,31 @@ footer p {
     }
 
 
-    /* CAPA */
+    /*==============================
+    CAPA MOBILE
+    MOSTRAR A IMAGEM INTEIRA
+    ==============================*/
 
     .hero {
-        height: 500px;
+        width: 100%;
+        height: auto;
+        min-height: 0;
         
-        background-image: url("imagens/capa-mobile.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: none;
+
+        position: relative;
+    }
+
+
+    .capa-mobile {
+        display: block;
+
+        width: 100%;
+        height: auto;
+
+        max-width: 100%;
+
+        object-fit: contain;
     }
 
 
@@ -548,24 +564,7 @@ footer p {
         font-size: 13px;
     }
 
-
-    .hero {
-        width: 100%;
-
-        aspect-ratio: 9 / 16;
-
-        height: auto;
-
-        min-height: 0;
-
-        background-image: url("imagens/capa-mobile.jpg");
-
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: #ffffff;
     } 
-    }
 
     .adocao {
         padding-left: 12px;
